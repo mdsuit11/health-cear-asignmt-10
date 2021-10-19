@@ -1,0 +1,18 @@
+.mainheader-container{
+    background-color: #00001a;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.navber{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.company-name{
+    margin-right: 200px;
+}
+.company-name h2{
+    color: white;
+}

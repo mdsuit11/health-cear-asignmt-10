@@ -1,0 +1,71 @@
+
+.main-container {
+    /* background-image: url(../../img/bg.jpg); */
+    /* background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-intro{
+    /* background-color: #040036; */
+    width: 500px;
+    height: 300px;
+    color: #243238;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    /* box-shadow: 5px 5px 5px 5px gray; */
+}
+.home-title{
+   padding-top:50px;
+   text-align: left;
+}
+.intro-text{
+   padding-left: 10px;
+   text-align: left;
+}
+.card-container {
+    padding-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-row: 20px;
+   grid-column: 20px;
+}
+
+.course-1 p, .course-2 p, .course-3 p, .course-4 p{
+    text-align: left;
+}
+/* .buy-btn{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color:	#7fff00	;
+    color: black;
+} */
+.buy-btn{
+    border: none;
+    margin-top: 10px;
+    border-bottom: 3px solid #b9d1db;
+    font-size: 18px;
+    height: 35px;
+}
+.buy-btn:hover {
+    background-color: #ebbaa9;
+}
+.last-container{
+    margin: 100px 20px;
+    display: flex;
+    
+}
+.last-container div{
+    margin: 0px 30px;
+}
+.last-container div:hover{
+    margin: 0px 30px;
+    box-shadow: 10px 10px 10px 10px lightgray;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.last-container div img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
