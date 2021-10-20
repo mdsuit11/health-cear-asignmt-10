@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import img1 from './order.png';
+import './Order.css';
 
 const Order = () => {
     return (
         <div>
             
-           <div>
+           <div className='order-img'>
            <img src={img1} alt="" />
            </div>
             <div>

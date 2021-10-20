@@ -1,9 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../useFirebase/useAuth';
 import './Login.css';
 const Login = () => {
-    const {error, logInInput} = useAuth();
+    const {error, logInInput, SignInGoogle} = useAuth();
+    const location = useLocation();
+    const histry = useHistory();
+    const redirectUrl = location.state?.from || '/'
+
+    const handleGoogleLogin = () => {
+        SignInGoogle()
+        .then(result => {
+            console.log(result.user);
+            histry.push(redirectUrl)
+            // setUser (result.user)    
+        })
+    }
     return (
         <div className="login-container rgs-from">
             <div className='registation-from'>
@@ -15,6 +27,7 @@ const Login = () => {
             <button onClick={logInInput} className='mt-5'>Log In</button>
             <Link to="profile">
                 <p className='text-danger'>{error}</p>
+                <button className='btn btn-primary mt-3' onClick={handleGoogleLogin}>Google Sign In</button>
             <p>creat an accoutn</p>
             </Link>
             </div>
