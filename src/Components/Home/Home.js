@@ -10,8 +10,6 @@ import img5 from '../../img/home-img/download-2.jpg';
 import img6 from '../../img/home-img/download-3.jpg';
 
 
-
-
 const Home = () => {
     return (
         <div className='main-container'> 
